@@ -18,13 +18,15 @@ class SpotifyPlaylistMaker:
         )
         self.spotifyObject = spotipy.Spotify(auth=self.token)
 
-    def create_playlist(self, name):
+    def create_playlist(self, name, public: bool):
         """
         name = your play list name
         create your play list from here
         """
         self.play_list = self.spotifyObject.user_playlist_create(
-            user=self.username, name=name
+            user=self.username,
+            name=name,
+            public=public,
         )
         return self.play_list
 
