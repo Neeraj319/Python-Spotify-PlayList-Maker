@@ -26,4 +26,4 @@ with open("songs.txt", "r") as file:
 spotifyObject.user_playlist_add_tracks(
     user=username, playlist_id=play_list["id"], tracks=songs
 )
-# note you can only add 100 tracks at once if you want to add more add li
+# note you can only add 100 tracks at once if you want to add more i will edit the code later
