@@ -30,4 +30,4 @@ spotify_instance.create_playlist(playlist_name , public=True)
 spotify_instance.add_songs_to_playlist()
 ```
 
-- It's not my fault that if songs don't get added it will be probably because of Spotify's search did not recognized your song title which lead to the song not getting added to the play list . This issue will happen in most cases since the song title in YouTube and spotify are miss matched or the song is not available on Spotify
+- It's not my fault that if songs don't get added to your playlist . This is probably because of Spotify's search did not recognized your song title which lead to the song not getting added to the play list . This issue will happen in most cases since the song title in YouTube and spotify are miss matched or the song is not available on Spotify
