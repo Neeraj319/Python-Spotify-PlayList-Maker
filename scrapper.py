@@ -30,8 +30,9 @@ class ScrapeData:
                 file.write(song_title + "\n")
 
 
-scraper = ScrapeData(
-    "https://www.youtube.com/watch?v=ky0N23MKs_k&list=RDky0N23MKs_k&start_radio=1"
-)
-scraper.get_songs_title()
-# scraper.dump_songs()
+if __name__ == "__main__":
+    scraper = ScrapeData(
+        "https://www.youtube.com/watch?v=ky0N23MKs_k&list=RDky0N23MKs_k&start_radio=1"
+    )
+    scraper.get_songs_title()
+    scraper.dump_songs()
